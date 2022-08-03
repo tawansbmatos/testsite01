@@ -9,10 +9,15 @@
     font-family:'Nunito', sans-serif;
     text-transform: capitalize;
 }
-body ,html{
+body{
     width: 100%;
     height: 100vh;
     background-color: #f0f0f5;
+}
+@media (max-width: 667px){
+    body{
+        width: 100vw;
+    }
 }
 .header{
     padding: 13px;
@@ -20,16 +25,21 @@ body ,html{
     background-color: #fff;  
     box-shadow: .1px 0.2px 7px 0px rgba(0, 0, 0, 0.475);
 }
+@media (max-width: 667px){
+    .header{
+        width: 100vw;
+    }
+}
 .logo{
     width: 200px;
     height: 70px;
     border-radius: 13px;
 }
-@media (max-width: 350px){
-   .logo{
-      width: 100px;
-      height: 50px;     
-   }
+@media (max-width: 667px){
+    .logo{
+       width: 130px;
+       border-radius: 9px; 
+    }
 }
 .nav{
     display: flex;
@@ -37,11 +47,14 @@ body ,html{
     justify-content: space-around;
     align-items: center;
 }
-
 .lista-menu-nav{
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;   
+}
+@media (max-width: 667px){
+    .lista-menu-nav{
+      
+    }
 }
 .ancora-menu{
     margin-left: 30px;
@@ -50,13 +63,15 @@ body ,html{
     font-size: 22px;
     padding: 5px;
 }
-@media (max-width: 350px){
-   .ancora-menu {
-    padding: 2px;
-      font-size: 16px;
-      margin-right: 3px;
-      margin: 3px;     
-   }
+@media (max-width: 667px){
+    .ancora-menu{
+       font-size: 16px;
+       margin: auto;
+       padding: 13px;
+      
+       
+       
+    }
 }
 #active{
     background-color: rgb(86, 192, 86) ;
@@ -79,41 +94,38 @@ body ,html{
     margin-top: 30px;
     width: 100vw;
 }
-@media (max-width: 350px){
-   .section-main {
-      width: 100vw;
-      height: 700px; 
-
-          
-   }
+@media (max-width: 667px){
+    .section-main{
+       height: 500px;
+    }
 }
 .container-main{
    
 }
 .conteudo-main{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
+    
 }
-@media (max-width: 350px){
+@media (max-width: 667px){
     .conteudo-main{
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
-        
-           
     }
- }
+}
 .img-home1{
  margin-top: 40px;
- 
 }
-@media (max-width: 350px){
-    .img-home1 {
-         width: 200px;
-         height: 250px;   
-    }
+@media (max-width: 667px){
+    .img-home1{
+       width: 300px;
+       margin-top: 0;
+       margin-bottom: 0;
+    } 
 }
+
 .especial-semana{
  text-align: center;  
 }
@@ -121,10 +133,23 @@ body ,html{
     font-size: 40px;
     color: rgb(61, 170, 61);
 }
+@media (max-width: 667px){
+    .especial-semana h1{
+       font-size: 30px;
+    }
+}
 .especial-semana p{
     font-size: 23px;
     font-weight: 400;
     margin-bottom: 20px;   
+}
+@media (max-width: 667px){
+    .especial-semana p{
+       font-size: 18px;
+       text-align: center;
+       width: 450px;
+       
+    }
 }
 .pedido-home{
     background-color: rgb(61, 170, 61);
@@ -145,20 +170,20 @@ body ,html{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: auto;
 }
 .cards-menu{
     padding: 10px;
     background-color: #fff;
     margin: 20px;
     height: 500px;
-    width: 400px; 
+    width: 380px; 
     box-shadow: 1px 3px 10px 0.5px rgba(0, 0, 0, 0.311);    
 }
-@media (max-width: 350px){
-   .cards-menu {
-      width: 450px;
-      margin-left: -5px;      
-   }
+@media (max-width: 667px){
+    .cards-menu{
+         padding: 0;
+    }
 }
 .cards-menu:hover{
     transform: translatey(-20px);
@@ -169,7 +194,7 @@ body ,html{
     color: rgb(76, 206, 76) ;
 }
 .cards-menu p{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-weight: 600;
     text-align: center;
     
@@ -182,15 +207,6 @@ body ,html{
     margin-left: 30px;
     
 }
-@media (max-width: 350px){
-   .pedido-cardapio {
-      display: flex;
-     align-items: center;
-     justify-content: center;
-     margin-right: 40px;
-     
-   }
-}
 .pedido-cardapio:hover{
     background-color: rgb(21, 158, 204);
 }
@@ -202,18 +218,3 @@ body ,html{
     margin-bottom: 13px;   
     border-radius: 20px; 
 }
-@media (max-width: 350px){
-   .img-cards-menu {
-      margin-left: 60px;
-
-      
-   }
-}
-span{
-    margin-left: 7px;
-}
-@media (max-width: 350px){
-    span{
-       margin-left: 180px;          
-    }
- }
