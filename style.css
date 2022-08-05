@@ -9,69 +9,81 @@
     font-family:'Nunito', sans-serif;
     text-transform: capitalize;
 }
-body{
+body
+,html{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #f0f0f5;
 }
-@media (max-width: 667px){
-    body{
-        width: 100vw;
-    }
-}
 .header{
-    padding: 13px;
-    width: 100vw;
-    background-color: #fff;  
+    padding: 1%;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-bottom: 1.8%;
+    width: 80%;
+    background-color: rgb(255, 255, 255);  
     box-shadow: .1px 0.2px 7px 0px rgba(0, 0, 0, 0.475);
 }
-@media (max-width: 667px){
+@media (max-width: 721px){
     .header{
-        width: 100vw;
+        
+        width: 100%;
+        margin: 0;
+       
     }
+    
 }
 .logo{
     width: 200px;
     height: 70px;
     border-radius: 13px;
 }
-@media (max-width: 667px){
+@media (max-width: 721px){
     .logo{
-       width: 130px;
-       border-radius: 9px; 
+        margin-left: 6%;
     }
 }
 .nav{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
+}
+@media (max-width: 721px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;      
+    }  
 }
 .lista-menu-nav{
     display: flex;
     flex-wrap: wrap;   
 }
-@media (max-width: 667px){
+@media (max-width: 721px){
     .lista-menu-nav{
-      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }  
+}
+.itens-menu{
+
+}
+@media (max-width: 721px){
+    .itens-menu{
+        padding: 7px;
     }
 }
 .ancora-menu{
     margin-left: 30px;
     color: rgb(61, 170, 61);
     font-weight: 650;
-    font-size: 22px;
+    font-size: 17px;
     padding: 5px;
-}
-@media (max-width: 667px){
-    .ancora-menu{
-       font-size: 16px;
-       margin: auto;
-       padding: 13px;
-      
-       
-       
-    }
+    text-transform: uppercase;
 }
 #active{
     background-color: rgb(86, 192, 86) ;
@@ -90,52 +102,83 @@ body{
 /*fim do menu inicial do site*/
 
 .section-main{
-    background-color: #fff;
-    margin-top: 30px;
-    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.089);
+    display: flex; 
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    box-shadow: .1px 0.2px 7px 0px rgba(0, 0, 0, 0.475);
 }
-@media (max-width: 667px){
+@media (max-width: 610px){
     .section-main{
-       height: 500px;
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
 }
+@media (max-width: 721px) {
+    .section-main{
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        
+    }
+
+}
+
 .container-main{
-   
+display: flex;
+flex-wrap: wrap;
 }
 .conteudo-main{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    
-}
-@media (max-width: 667px){
-    .conteudo-main{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-}
-.img-home1{
- margin-top: 40px;
-}
-@media (max-width: 667px){
-    .img-home1{
-       width: 300px;
-       margin-top: 0;
-       margin-bottom: 0;
-    } 
+    justify-content: space-around;    
 }
 
+.img-home1{
+ margin-top: 30px;
+ 
+}
+@media (max-width: 721px){
+    .img-home1{
+        width: 50%;
+    }   
+}
+@media (max-width: 1204px) {
+    .img-home1{
+        width:40%;        
+    }
+}
 .especial-semana{
- text-align: center;  
+ text-align: center;
+ width: 40%;  
+
+}
+@media (max-width: 768px) {
+    .especial-semana{
+        width: 60%;       
+    }
+}
+@media (max-width: 721px){
+    .especial-semana{
+        width: 50%;
+    }
 }
 .especial-semana h1{
     font-size: 40px;
     color: rgb(61, 170, 61);
 }
-@media (max-width: 667px){
+@media (max-width: 721px){
     .especial-semana h1{
-       font-size: 30px;
+        font-size: 25px;
+    }
+}
+@media (max-width: 768px) {
+    .especial-semana h1{
+        font-size: 30px;
+        margin-bottom: 10px;      
     }
 }
 .especial-semana p{
@@ -143,78 +186,134 @@ body{
     font-weight: 400;
     margin-bottom: 20px;   
 }
-@media (max-width: 667px){
+@media (max-width: 721px){
     .especial-semana p{
-       font-size: 18px;
-       text-align: center;
-       width: 450px;
-       
+        font-size: 16px;
+        margin-bottom: 5%;
     }
 }
+@media (max-width: 768px) {
+    .especial-semana p{
+        font-size: 90%;
+        margin-right: 5px;
+       
+    }
+
+}
+
 .pedido-home{
     background-color: rgb(61, 170, 61);
     padding: 8px;
     border-radius: 13px;
     color: #fff;
 }
+@media (max-width: 721px){
+    .pedido-home{
+        padding: 4px;
+        font-size: 13px;
+    }
+}
 .pedido-home:hover{
     background-color: rgb(21, 158, 204);
 }
 /*início da secção 2. onde estão os cards do cardápio.*/
 .section-home2{
-    width: 100vw;
+    width: 100%;
     background-color: #f0f0f5;
-    margin-top: 40px;
+    margin-top: 3%;
+    
 }
+
 .container-cards-menu{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
+    justify-items: center;
     margin: auto;
+    max-width: 1289px;
 }
-.cards-menu{
-    padding: 10px;
-    background-color: #fff;
-    margin: 20px;
-    height: 500px;
-    width: 380px; 
-    box-shadow: 1px 3px 10px 0.5px rgba(0, 0, 0, 0.311);    
-}
-@media (max-width: 667px){
-    .cards-menu{
-         padding: 0;
+
+@media (max-width: 768px) and (max-width: 763px){
+    .container-cards-menu{
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto; 
     }
+}
+@media (max-width: 610px) {
+    .container-cards-menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+@media (max-width: 521px) {
+    .container-cards-menu{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.cards-menu{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 3px 10px 0.5px rgba(0, 0, 0, 0.311);    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 80%;  
+}
+@media (max-width: 763px) {
+    .cards-menu{
+      width: 80%;               
+    }
+}
+
+@media (max-width: 610px) {
+    .cards-menu{
+        width: 80%;
+    }
+
+}
+@media (max-width: 510px) {
+    .container-cards-menu{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
 }
 .cards-menu:hover{
     transform: translatey(-20px);
 }
 .cards-menu h3{
+    margin-top: 3%;
     text-align: center;
-    font-size: 25px;
-    color: rgb(76, 206, 76) ;
+    font-size: 26px;
+    color: rgb(63, 174, 63) ;
 }
 .cards-menu p{
-    margin-bottom: 40px;
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
-    
+    margin-bottom: 10px;
+    padding: 5px;    
 }
 .pedido-cardapio{ /*btn do pedido*/
     background-color: rgb(61, 170, 61);
     padding: 8px;
     border-radius: 13px;
-    color: #fff; 
-    margin-left: 30px;
-    
+    color: #fff;    
 }
 .pedido-cardapio:hover{
     background-color: rgb(21, 158, 204);
 }
 
 .img-cards-menu{
-    width: 300px;
-    height: 250px;
-    margin-left: 11%;
-    margin-bottom: 13px;   
-    border-radius: 20px; 
+    width: 70%;
+    height: 40%;
+    margin: auto;
+    box-shadow: 1px 3px 10px 0.5px rgba(0, 0, 0, 0.5);         
 }
+
+
